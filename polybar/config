@@ -69,7 +69,7 @@ font-1 = unifont:fontformat=truetype:size=8:antialias=false;0
 ;font-1 = siji:pixelsize=11;1
 font-2 = FontAwesome:size=7
 modules-left = i3 xwindow battery  
-modules-center =apps click 
+modules-center =nmtui nitrogen github term rofi setting 
 modules-right = backlight-acpi xbacklight xkeyboard memory cpu eth wlan filesystem  date time pulseaudio powermenu
 tray-position = none 
 tray-padding = 2
@@ -390,10 +390,10 @@ margin-top = 5
 margin-bottom = 5
 
 ; vim:ft=dosini
-[module/apps]
+[module/setting]
 type=custom/menu
 
-label-open =   
+label-open =   
 label-open-foreground = ${colors.secondary}
 menu-0-0=  
 menu-0-0-exec =python3 /$HOME/.config/polybar/bar_item/battery.py
@@ -401,17 +401,35 @@ label-separator = -
 label-separator-foreground = ${colors.foreground-alt}
 menu-0-1=    
 menu-0-1-exec =python3 /$HOME/.config/polybar/bar_item/stockage.py
-menu-0-2=     
+menu-0-2=     
 menu-0-2-exec =python3 /$HOME/.config/polybar/bar_item/keyboard.py
-menu-0-3=     
+menu-0-3=     
 menu-0-3-exec =python3 /$HOME/.config/polybar/bar_item/dateTime.py
 
-[module/click]
-;label-open = c
-;menu-0-0= aaaa
-;label-exec =bash /$HOME/.config/polybar/kill.sh 
-format-click = <label-click> 
-label-click =  
-label-click-foreground = #D51414
-label-muted =  mute
-label-muted-foreground = #D76363
+
+
+[module/nmtui]
+type = custom/text
+content = " "
+click-left = xterm -e nmtui
+
+[module/github]
+type = custom/text
+content = "  "
+click-left = firefox https://www.github.com/rox-11 &
+
+[module/term]
+type = custom/text
+content = ""
+click-left = mate-terminal
+
+[module/nitrogen]
+type = custom/text
+content = ""
+click-left =nitrogen 
+
+[module/rofi]
+type = custom/text
+content = ""
+click-left =rofi -show run & 
+
