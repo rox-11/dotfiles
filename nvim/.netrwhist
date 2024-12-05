@@ -1,0 +1,12 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =3
+let g:netrw_dirhist_3='/home/snom/.i3'
+let g:netrw_dirhist_2='/home/snom/.config/mate'
+let g:netrw_dirhist_1='/home/snom/.local/bin'
+let g:netrw_dirhist_0='/home/snom/Desktop/lagi/.git'
+let g:netrw_dirhist_9='/home/snom/Desktop/lagi/.git/hooks'
+let g:netrw_dirhist_8='/home/snom/Desktop/lagi/.git'
+let g:netrw_dirhist_7='/home/snom/Desktop/lagi/.git/branches'
+let g:netrw_dirhist_6='/home/snom/Desktop/lagi/.git'
+let g:netrw_dirhist_5='/home/snom/Documents/hwawi/cfg/xmodmap'
+let g:netrw_dirhist_4='/home/snom/Documents/sdcart'

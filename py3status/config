@@ -1,0 +1,15 @@
+general {
+        colors = true
+        interval = 1
+        color_good = "#FF9400"
+        color_bad = "#09FF93"
+        color_degraded = "#FFD800"
+}
+
+order += "window"
+order += "load"
+order += "cpu_usage"
+order += "memory"
+order += "disk /"
+order += "disk /home"
+order += "tztime local"
